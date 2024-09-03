@@ -15,6 +15,7 @@ steps:
         --sql-flavour ${_SQL_FLAVOUR} \
           ${_VIEWS_DIR}
 logsBucket: "gs://${_GCS_BUCKET}"
+serviceAccount: "${_CUSTOM_SERVICE_ACCOUNT}"
 timeout: 7200s
 substitutions:
   _VIEWS_DIR: src/views
